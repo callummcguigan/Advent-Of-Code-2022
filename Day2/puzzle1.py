@@ -1,18 +1,10 @@
 score = 0
-file = open('Day2\input.txt', 'r')
 count = 0
 
 inputArray = []
 
-while True:
-    count += 1
-
-    line = file.readline()
-
-    if not line:
-        break
-
-    inputArray.append(line)
+with open('Day2\input.txt') as f:
+    inputArray = f.readlines()
 
 for x in range(len(inputArray)):
     
